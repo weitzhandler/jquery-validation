@@ -808,6 +808,8 @@ test( "dynamic form", function() {
 	$( "#agb" ).attr( "disabled", false );
 	v.form();
 	errors( 1 );
+        v = $( "#disabledFieldSet" ).validate();
+        errors( 0 );
 });
 
 test( "idOrName()", function() {
